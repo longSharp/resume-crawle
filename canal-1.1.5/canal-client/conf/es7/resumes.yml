@@ -1,0 +1,13 @@
+dataSourceKey: defaultDS
+destination: example
+groupId: g1
+esMapping:
+  _index: resumes
+  _id: _id
+  sql: "select r.id AS _id,
+        r.title,
+        r.url,
+        r.type_id 
+        from resumes r"
+  etlCondition: "where a.c_time>={}"
+  commitBatch: 3000

@@ -1,0 +1,29 @@
+2021-06-27 02:12:41.114 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [canal.properties]
+2021-06-27 02:12:41.144 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [example/instance.properties]
+2021-06-27 02:12:41.472 [main] WARN  o.s.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'connectionCharset' being accessed! Ambiguous write methods found next to actually used [public void com.alibaba.otter.canal.parse.inbound.mysql.AbstractMysqlEventParser.setConnectionCharset(java.lang.String)]: [public void com.alibaba.otter.canal.parse.inbound.mysql.AbstractMysqlEventParser.setConnectionCharset(java.nio.charset.Charset)]
+2021-06-27 02:12:41.614 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [canal.properties]
+2021-06-27 02:12:41.615 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [example/instance.properties]
+2021-06-27 02:12:42.339 [main] INFO  c.a.otter.canal.instance.spring.CanalInstanceWithSpring - start CannalInstance for 1-example 
+2021-06-27 02:12:42.344 [main] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.LogEventConvert - --> init table filter : ^.*\..*$
+2021-06-27 02:12:42.345 [main] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.LogEventConvert - --> init table black filter : 
+2021-06-27 02:12:42.564 [main] INFO  c.a.otter.canal.instance.core.AbstractCanalInstance - start successful....
+2021-06-27 02:12:43.193 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - ---> begin to find start position, it will be long time for reset or first position
+2021-06-27 02:12:43.206 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - prepare to find start position just last position
+ {"identity":{"slaveId":-1,"sourceAddress":{"address":"node02","port":3306}},"postion":{"gtid":"","included":false,"journalName":"binlog.000003","position":2793447,"serverId":1,"timestamp":1624625594000}}
+2021-06-27 02:12:43.707 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - ---> find start position successfully, EntryPosition[included=false,journalName=binlog.000003,position=2793447,serverId=1,gtid=,timestamp=1624625594000] cost : 452ms , the next step is binlog dump
+2021-06-27 12:03:27.554 [Thread-6] INFO  c.a.otter.canal.instance.core.AbstractCanalInstance - stop CannalInstance for null-example 
+2021-06-27 12:03:32.069 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.DirectLogFetcher - Received EOF packet from server, apparent master disconnected. It's may be duplicate slaveId , check instance config
+2021-06-27 12:03:33.084 [Thread-6] INFO  c.a.otter.canal.instance.core.AbstractCanalInstance - stop successful....
+2021-06-27 20:33:15.219 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [canal.properties]
+2021-06-27 20:33:15.226 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [example/instance.properties]
+2021-06-27 20:33:15.422 [main] WARN  o.s.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'connectionCharset' being accessed! Ambiguous write methods found next to actually used [public void com.alibaba.otter.canal.parse.inbound.mysql.AbstractMysqlEventParser.setConnectionCharset(java.lang.String)]: [public void com.alibaba.otter.canal.parse.inbound.mysql.AbstractMysqlEventParser.setConnectionCharset(java.nio.charset.Charset)]
+2021-06-27 20:33:15.499 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [canal.properties]
+2021-06-27 20:33:15.500 [main] INFO  c.a.o.c.i.spring.support.PropertyPlaceholderConfigurer - Loading properties file from class path resource [example/instance.properties]
+2021-06-27 20:33:16.274 [main] INFO  c.a.otter.canal.instance.spring.CanalInstanceWithSpring - start CannalInstance for 1-example 
+2021-06-27 20:33:16.336 [main] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.LogEventConvert - --> init table filter : ^.*\..*$
+2021-06-27 20:33:16.337 [main] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.LogEventConvert - --> init table black filter : 
+2021-06-27 20:33:16.518 [main] INFO  c.a.otter.canal.instance.core.AbstractCanalInstance - start successful....
+2021-06-27 20:33:16.896 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - ---> begin to find start position, it will be long time for reset or first position
+2021-06-27 20:33:16.924 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - prepare to find start position just last position
+ {"identity":{"slaveId":-1,"sourceAddress":{"address":"node02","port":3306}},"postion":{"gtid":"","included":false,"journalName":"binlog.000004","position":6408702,"serverId":1,"timestamp":1624754846000}}
+2021-06-27 20:33:17.468 [destination = example , address = /192.168.2.120:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - ---> find start position successfully, EntryPosition[included=false,journalName=binlog.000004,position=6408702,serverId=1,gtid=,timestamp=1624754846000] cost : 485ms , the next step is binlog dump
