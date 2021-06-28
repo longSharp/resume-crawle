@@ -1,0 +1,27 @@
+{
+  "name": "crawler",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
+    "style-loader": "^2.0.0",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.2.4",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-lazyload": "^1.3.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
